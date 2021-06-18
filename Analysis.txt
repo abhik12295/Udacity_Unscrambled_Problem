@@ -1,0 +1,50 @@
+Run Time Analysis (Worst Case Big-O Notation):
+
+-->Task0:
+
+In this only 2 print statements first record of texts and last record of calls
+So, Big O = O(1)
+
+-->Task1:
+
+In this, I used 2 for loops but they are not nested loops. Each for loop iterates n items.
+Therefore, number of iteration = 2n items
+So, Big O = O(2n) = O(n)
+
+-->Task2:
+
+In this, I used 3 for loops:
+i.   One for iterating over calls and adding calling and receiving telephone and its corresponding time stamp. 
+     Thus, it has iteration of n items.
+ii.  Another for loop iterates for time in directory dictionary and check for the longest time using if loop.
+     Thus, it has iteration of n items. 
+iii. Lastly, for loop is simply to check if selected time stamp is equal to the longest time.
+     Thus, it also has iteration of n items.
+Total iteration = n+n+n = 3n
+So, Big O = O(3n) = O(n)
+
+-->Task3:
+
+Part A 
+In this, I used 2 for loop but not nested. First for loop is to iterate over the list of all 3 types of telephone number.
+Thus, having iteration on n items.
+
+Next step I used sorted(set()) which is the sorting method for set in python and having Big O = nlogn
+
+And final for loop is for printing the list which iterates n items.
+Thus, having Big O of O(n).
+
+So, Big O = O(n+ nlogn + n) = O(n+nlogn) = O(nlogn)
+
+Part B
+In this, there is 1 for loop to select the calls called from Bangalore and received to Bangalore and simply printing the percentage result 
+So, Big O =  (n+nlogn+1) = O(n+nlogn) = O(nlogn)
+
+
+-->Task4:
+
+In this, I used 2 for loops to iterate calls list and texts list. 
+Each loop iterates n items. 
+I used sorted(set()) which is the sorting method for set in python and having Big O = nlogn
+And one for loop to print items.
+Thus, Big O = O(n+n+n+nlogn) = O(3n+nlogn) = O(nlogn)
